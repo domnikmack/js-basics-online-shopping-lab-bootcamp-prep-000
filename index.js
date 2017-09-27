@@ -47,7 +47,7 @@ function removeFromCart(item) {
     if (!cart[i].hasOwnProperty(item)) {
       console.log('That item is not in your cart.');
     } else {
-    var index = cart.indexOf(item);
+    var index = cart[i].indexOf(item);
     cart.splice(index, 1);
     }
   }
