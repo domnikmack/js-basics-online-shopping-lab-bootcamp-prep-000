@@ -49,11 +49,14 @@ function removeFromCart(item) {
         } else {
     		console.log('That item is not in your cart.');
  		}
-	
+
     }
 	return cart;
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber) {
+    console.log('Your total cost is $' + total() + ', which will be charged to the card ' + cardNumber + '.');
+    cart = [];
+  }
 }
